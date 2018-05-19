@@ -1,3 +1,5 @@
+![Kodflix](./kodflix.png?raw=true "Title")
+
 # Kodflix - Kodiri's sample app :)
 
 ## Prerequirements
