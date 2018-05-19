@@ -1,9 +1,10 @@
 # Kodflix
 
 ## Prerequirements
-1. [Install git](https://git-scm.com/downloads)
-2. [Install node](https://nodejs.org/en/download/)
-3. [Install Visual Studio](https://code.visualstudio.com/download)
+1. [Create a Github account](https://github.com)
+2. [Install git](https://git-scm.com/downloads)
+3. [Install node](https://nodejs.org/en/download/)
+4. [Install Visual Studio](https://code.visualstudio.com/download)
 
 ## Setup
 
@@ -16,7 +17,7 @@ npm start
 ```
 [Create react app](https://github.com/facebook/create-react-app)
 
-### Create GitHub account
+### [Create a GitHub repo](https://github.com/new)
 
 ### Upload app to GitHub
 ```
@@ -26,3 +27,10 @@ git add .
 git commit -m "First commit"
 git push -u origin master
 ```
+
+## Adding changes
+1. Change something :) (e.g. on `src/App.js`)
+2. Open the source control panel (`View -> Open View -> Source Control`)
+3. Set a message describing your changes
+4. "Commit" the changes (`... -> Commit All`)
+5. "Push" the changes, to get them saved on Github (`... -> Push`)
