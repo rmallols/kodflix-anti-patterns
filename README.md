@@ -1,4 +1,4 @@
-# Kodflix
+# Kodflix - Kodiri's sample app :)
 
 ## Prerequirements
 1. [Create a Github account](https://github.com)
