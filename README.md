@@ -17,7 +17,7 @@ create-react-app kodflix
 cd kodflix
 npm start
 ```
-[Create react app](https://github.com/facebook/create-react-app)
+[Bonus reading: About the "React app"](https://github.com/facebook/create-react-app)
 
 ### [Create a GitHub repo](https://github.com/new)
 
