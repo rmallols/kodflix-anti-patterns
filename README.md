@@ -20,11 +20,22 @@ npm start
 [Bonus reading: About the "React app"](https://github.com/facebook/create-react-app)
 
 ### [Create a GitHub repo](https://github.com/new)
+1. Open a Gitbash shell. This is usually located, on Windows, at `C:\Program Files (x86)\Git\bin\sh.exe`
+2. Run the following command:
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+Then press `Enter` on every question you get asked
+
+3. Copy your just-created public key, located, on Windows, at `C:\users\<your_user>\.ssh\id_rsa.pub`
+4. Paste the key into your GitHub account: `Profile -> Settings -> SSH and GPG keys -> New SSH key`
+
+### Grant your laptop access to your GitHub repo
 
 ### Upload app to GitHub
 ```
 git init
-git remote add origin git@github.com:rmallols/kodflix.git
+git remote add origin git@github.com:<your_gitHub_user>/kodflix.git
 git add .
 git commit -m "First commit"
 git push -u origin master
