@@ -3,10 +3,17 @@
 # Kodflix - Kodiri's sample app :)
 
 ## Prerequirements
-1. [Create a Github account](https://github.com)
+1. [Create a GitHub account](https://github.com)
 2. [Install git](https://git-scm.com/downloads)
 3. [Install node](https://nodejs.org/en/download/)
 4. [Install Visual Studio](https://code.visualstudio.com/download)
+
+<details>
+  <summary>Details</summary>
+  <ul>
+    <li><b>GitHub</b>: This is where</li>
+  </ul>
+</details>
 
 ## Setup
 
@@ -41,6 +48,7 @@ git add .
 git commit -m "First commit"
 git push -u origin master
 ```
+![Kodflix](./commit-push.png?raw=true "commit-push")
 
 ## Adding changes
 1. Change something :) (e.g. on `src/App.js`)
