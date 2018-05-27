@@ -8,13 +8,6 @@
 3. [Install node](https://nodejs.org/en/download/)
 4. [Install Visual Studio](https://code.visualstudio.com/download)
 
-<details>
-  <summary>Details</summary>
-  <ul>
-    <li><b>GitHub</b>: This is where</li>
-  </ul>
-</details>
-
 ## Setup
 
 ### Install app locally
