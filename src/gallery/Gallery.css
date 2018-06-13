@@ -1,0 +1,18 @@
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-row > * {
+    flex: 1;
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .gallery-row {
+        display: block;
+    }
+}
