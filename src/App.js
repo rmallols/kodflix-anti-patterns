@@ -13,27 +13,27 @@ class App extends Component {
       <div className='App'>
         <div className='image-cover-row'>
           <div className='image-cover-row-item'>
-            <h1>Black Mirror</h1>
+            <img src={blackMirror}  alt='' />
           </div>
           <div className='image-cover-row-item'>
-            <h1>Breaking Bad</h1>
+            <img src={breakingBad}  alt='' />
           </div>
           <div className='image-cover-row-item'>
-            <h1>Death Note</h1>
+            <img src={deathNote} alt='' />
           </div>
         </div>
         <div className='image-cover-row'>
           <div className='image-cover-row-item'>
-            <h1>Game of Thrones</h1>
+            <img src={gameOfTHrones}  alt='' />
           </div>
           <div className='image-cover-row-item'>
-            <h1>The Walking Dead</h1>
+            <img src={theWalkingDead}  alt='' />
           </div>
           <div className='image-cover-row-item'>
-            <h1>The Wire</h1>
+            <img src={theWire} alt='' />
           </div>
         </div>
-      </div >
+      </div>
     );
   }
 }

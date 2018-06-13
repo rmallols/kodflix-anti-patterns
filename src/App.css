@@ -8,6 +8,11 @@
 }
 
 .image-cover-row-item {
-  margin: 30px;
   flex: 1;
+  flex-basis: 100%;
+}
+
+.image-cover-row-item img {
+  height: 100%;
+  width: 100%;
 }
