@@ -36,7 +36,7 @@ Then press `Enter` on every question you get asked
 ### Upload app to GitHub
 ```
 git init
-git remote add origin git@github.com:<your_gitHub_user>/kodflix.git
+git remote add origin git@github.com:your_gitHub_user/kodflix.git
 git add .
 git commit -m "First commit"
 git push -u origin master
