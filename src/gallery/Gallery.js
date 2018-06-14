@@ -13,16 +13,12 @@ export default class Gallery extends React.Component {
     render() {
         return (
             <div className='gallery'>
-                <div className='gallery-row'>
-                    <Cover image={blackMirror} id='black-mirror' title='Black Mirror' />
-                    <Cover image={breakingBad} id='breaking-bad' title='Breaking Bad' />
-                    <Cover image={deathNote} id='death-note' title='Death Note' />
-                </div>
-                <div className='gallery-row'>
-                    <Cover image={gameOfThrones} id='game-of-thrones' title='Game of Thrones' />
-                    <Cover image={theWalkingDead} id='the-walking-dead' title='The Walking Dead' />
-                    <Cover image={theWire} id='the-wire' title='The Wire' />
-                </div>
+                <Cover image={blackMirror} id='black-mirror' title='Black Mirror' />
+                <Cover image={breakingBad} id='breaking-bad' title='Breaking Bad' />
+                <Cover image={deathNote} id='death-note' title='Death Note' />
+                <Cover image={gameOfThrones} id='game-of-thrones' title='Game of Thrones' />
+                <Cover image={theWalkingDead} id='the-walking-dead' title='The Walking Dead' />
+                <Cover image={theWire} id='the-wire' title='The Wire' />
             </div>
         );
     }
