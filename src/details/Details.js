@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import getShows from '../shows';
 import './Details.css';
 
@@ -17,7 +18,9 @@ export default class Details extends React.Component {
 
     render() {
         return (
-            <h1>{this.state.show.title}</h1>
+            this.state.show ?
+                <h1>{this.state.show.title}</h1> :
+                <Redirect to='/not-found' />
         )
     }
 }
