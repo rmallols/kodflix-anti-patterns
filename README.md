@@ -11,6 +11,11 @@
 ## Setup
 
 ### Install app locally
+Open a Terminal:
+* on Mac, use the built in `Terminal` app
+* on Windows, you can use either `PowerShell` (Windows 10+) or `GitBash` (any version)
+
+Run the following commands, one after the other:
 ```
 npm install -g create-react-app
 create-react-app kodflix
@@ -22,9 +27,6 @@ npm start
 ### [Create a GitHub repo](https://github.com/new)
 
 ### Grant your laptop access to your GitHub repo
-
-1. Open a GitBash shell. This is usually located, on Windows, at `C:\Program Files (x86)\Git\bin\sh.exe`. PowerShell is also valid for Windows users.
-2. Run the following command:
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
@@ -48,9 +50,13 @@ git add .
 Recurrent actions (every time we want to upload changes to our GitHub)
 
 ![Kodflix](./commit-push.png?raw=true "commit-push")
-1. Open the source control panel (3rd icon on the left menu, or `View -> Open View -> Source Control`)
+1. Open the source control panel (3rd icon on the left menu)
 2. Set a message describing your changes
 3. **"Commit"** the changes (`... -> Commit All`)
 4. **"Push"** the changes, to get them saved on Github (`... -> Push`)
 
-
+NOTE: If the push command get rejected, try using the command line to ensuring authentication is granted:
+```
+git push -u origin master
+```
+This would be necessary just once, though.
