@@ -55,7 +55,7 @@ Recurrent actions (every time we want to upload changes to our GitHub)
 3. **"Commit"** the changes (`... -> Commit All`)
 4. **"Push"** the changes, to get them saved on Github (`... -> Push`)
 
-NOTE: If the push command get rejected, try using the command line to ensuring authentication is granted:
+NOTE: If the push command gets rejected, try using the command line to ensuring authentication is granted:
 ```
 git push -u origin master
 ```
