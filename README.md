@@ -23,7 +23,7 @@ npm start
 
 ### Grant your laptop access to your GitHub repo
 
-1. Open a GitBash shell. This is usually located, on Windows, at `C:\Program Files (x86)\Git\bin\sh.exe`
+1. Open a GitBash shell. This is usually located, on Windows, at `C:\Program Files (x86)\Git\bin\sh.exe`. PowerShell is also valid for Windows users.
 2. Run the following command:
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -33,19 +33,24 @@ Then press `Enter` on every question you get asked
 3. Copy your just-created public key, located, on Windows, at `C:\users\<your_user>\.ssh\id_rsa.pub`
 4. Paste the key into your GitHub account: `Profile -> Settings -> SSH and GPG keys -> New SSH key`
 
-### Upload app to GitHub
+### Open kodflix with Visual Studio
+
+`File -> Add Folder to Workspace`
+
+### Make kodflix git-aware locally
+From now on, we can type any command from the integrated terminal (`View -> Integrated Terminal`)
 ```
 git init
 git remote add origin git@github.com:your_gitHub_user/kodflix.git
 git add .
-git commit -m "First commit"
-git push -u origin master
 ```
-![Kodflix](./commit-push.png?raw=true "commit-push")
+### Upload app to GitHub
+Recurrent actions (every time we want to upload changes to our GitHub)
 
-## Adding changes
-1. Change something :) (e.g. on `src/App.js`)
-2. Open the source control panel (`View -> Open View -> Source Control`)
-3. Set a message describing your changes
-4. "Commit" the changes (`... -> Commit All`)
-5. "Push" the changes, to get them saved on Github (`... -> Push`)
+![Kodflix](./commit-push.png?raw=true "commit-push")
+1. Open the source control panel (3rd icon on the left menu, or `View -> Open View -> Source Control`)
+2. Set a message describing your changes
+3. **"Commit"** the changes (`... -> Commit All`)
+4. **"Push"** the changes, to get them saved on Github (`... -> Push`)
+
+
