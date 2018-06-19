@@ -27,7 +27,7 @@ export default class Details extends React.Component {
                             {show.synopsis}
                         </h3>
                         <div className='details-content-cover'>
-                            <img src={show.image} />
+                            <img src={show.image} alt={show.title} />
                         </div>
                     </div>
                 </div> :
