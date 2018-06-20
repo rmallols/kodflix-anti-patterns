@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gallery.css';
 import Cover from './cover/Cover';
+import Loading from '../common/loading/Loading';
 
 export default class Gallery extends React.Component {
 
@@ -18,11 +19,13 @@ export default class Gallery extends React.Component {
     render() {
         return (
             <div className='gallery'>{
-                this.state.shows.map(show => {
-                    return (
-                        <Cover key={show.id} id={show.id} title={show.title} />
-                    );
-                })
+                this.state.shows.length ?
+                    this.state.shows.map(show => {
+                        return (
+                            <Cover key={show.id} id={show.id} title={show.title} />
+                        );
+                    }) :
+                    <Loading />
             }
             </div>
         );
