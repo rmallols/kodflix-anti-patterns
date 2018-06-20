@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.16.3",
+    "mongodb": "^3.0.10",
     "nodemon": "^1.17.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -12,7 +13,8 @@
   },
   "scripts": {
     "start": "npm-run-all -s build _start-backend",
-    "start-dev": "npm-run-all -p _start-frontend _start-backend",
+    "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
+    "_start-db": "mongod",
     "_start-frontend": "react-scripts start",
     "_start-backend": "nodemon src/backend/app.js",
     "build": "react-scripts build",
