@@ -12,7 +12,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "npm-run-all -s build _start-backend",
+    "start": "NODE_ENV=production npm-run-all -s build _start-backend",
     "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
     "_start-db": "mongod",
     "_start-frontend": "react-scripts start",
