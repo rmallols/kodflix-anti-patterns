@@ -13,6 +13,13 @@ db.connect().then(dbo => {
         });
     });
 
+    app.get('/rest/shows/:id', (req, res) => {
+        dbo.collection('shows').findOne({ id: req.params.id }, (err, doc) => {
+            if (err) throw err;
+            res.send(doc);
+        });
+    });
+
     // Serve any static files
     app.use(express.static(path.join(__dirname, '../../build')));
     // Handle React routing, return all requests to React app
