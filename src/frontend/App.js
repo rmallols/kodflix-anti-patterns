@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import './App.css';
+import Menu from './common/menu/Menu';
 import Gallery from './gallery/Gallery';
 import Details from './details/Details';
 import NotFound from './not-found/NotFound';
@@ -22,6 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Menu />
         <Switch>
           <Route exact path='/' component={Gallery} />
           <Route path='/not-found' component={NotFound} />

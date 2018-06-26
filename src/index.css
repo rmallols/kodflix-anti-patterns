@@ -8,3 +8,8 @@ html, body {
   background-color: #2f333d;
   color: white;
 }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 20px 0;
+}
