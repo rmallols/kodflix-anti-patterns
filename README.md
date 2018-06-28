@@ -59,4 +59,4 @@ NOTE: If the push command gets rejected, try using the command line to ensuring 
 ```
 git push -u origin master
 ```
-This would be necessary just once, though.
+This would be necessary just once, though
