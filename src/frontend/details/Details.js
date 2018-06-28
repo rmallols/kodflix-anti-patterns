@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import Loading from '../common/loading/Loading';
 import './Details.css';
@@ -39,6 +40,9 @@ function DetailsContent({ show }) {
                 <h3 className='details-content-synopsis'>
                     {show.synopsis}
                 </h3>
+                <div>
+                    <Link to={`/${show.id}/play`} className='details-play' />
+                </div>
             </div>
         </div>
     )
