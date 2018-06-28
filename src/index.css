@@ -9,7 +9,7 @@ html, body {
   height: 100%;
   overflow-y: auto;
   text-align: center;
-  background-color: #2f333d;
+  background-color: black;
   color: white;
 }
 
@@ -21,4 +21,8 @@ h1, h2, h3, h4, h5 {
 a {
   color: white;
   text-decoration: none;
+}
+
+a, button {
+  cursor: pointer;
 }
