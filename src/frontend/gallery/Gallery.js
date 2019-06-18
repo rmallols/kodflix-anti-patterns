@@ -8,14 +8,21 @@ export default class Gallery extends React.Component {
 
     constructor() {
         super();
-        this.state = { data: [] };
+        this.state = { data: [], shuffleTime: undefined };
         this.shuffle = this.shuffle.bind(this);
     }
 
     shuffle() {
-        this.setState(prevState => ({
-            data: shuffle(prevState.data)
-        }));
+        let startTime = this.getTime();
+        shuffle(this.state.data).then(data => {
+            this.setState({ data: data });
+        });
+        let endTime = this.getTime();
+        this.setState({ shuffleTime: endTime - startTime });
+    }
+
+    getTime() {
+        return new Date().getTime();
     }
 
     render() {
@@ -24,7 +31,10 @@ export default class Gallery extends React.Component {
             .then(data => this.setState({ data }));
         return (
             <div>
-                <button class='shuffle' onClick={this.shuffle}>Shuffle</button>
+                <div class='shuffle'>
+                    <button onClick={this.shuffle}>Shuffle</button>
+                    <div>{this.state.shuffleTime !== undefined ? 'Shuffle time: ' + this.state.shuffleTime : ''}</div>
+                </div>
                 <div class='gallery'>
                     {
                         this.state.data.length ?

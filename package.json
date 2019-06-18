@@ -17,7 +17,7 @@
     "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
     "_start-db": "mongod",
     "_start-frontend": "react-scripts start",
-    "_start-backend": "nodemon src/backend/app.js",
+    "_start-backend": "node src/backend/app.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
