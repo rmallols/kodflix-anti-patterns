@@ -10,3 +10,17 @@
     position: relative;
     overflow: hidden;
 }
+
+.shuffle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    opacity: .8;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@ export default class Details extends React.Component {
 
     componentDidMount() {
         let showId = this.props.match.params.showId;
-        fetch(`/rest/shows/${showId}`)
+        fetch(`/rest/best-movies/${showId}`)
             .then(response => response.json())
             .then(show => this.setState({ show }));
     }

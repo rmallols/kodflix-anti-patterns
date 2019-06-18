@@ -6,14 +6,14 @@ const port = process.env.PORT || 3001;
 
 db.connect().then(dbo => {
 
-    app.get('/rest/shows', (req, res) => {
+    app.get('/rest/best-movies', (req, res) => {
         dbo.collection('shows').find({}).toArray((err, results) => {
             if (err) throw err;
             res.send(results);
         });
     });
 
-    app.get('/rest/shows/:id', (req, res) => {
+    app.get('/rest/best-movies/:id', (req, res) => {
         dbo.collection('shows').findOne({ id: req.params.id }, (err, doc) => {
             if (err) throw err;
             res.send(doc);

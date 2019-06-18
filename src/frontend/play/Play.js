@@ -12,7 +12,7 @@ export default class Play extends React.Component {
 
     componentDidMount() {
         let showId = this.props.match.params.showId;
-        fetch(`/rest/shows/${showId}`)
+        fetch(`/rest/best-movies/${showId}`)
             .then(response => response.json())
             .then(show => this.setState({ show }));
     }
@@ -33,7 +33,7 @@ function PlayContent({ show }) {
     return (
         <div className='play'>
             <iframe width='100%' height='100%' title='Watch!'
-                src={`http://www.youtube.com/embed/${show.videoId}?autoplay=1&showinfo=0`}>
+                src={`http://www.youtube.com/embed/${show.videoId}?autoplay=1&showinfo=0&mute=1`}>
             </iframe>
         </div>
     )
