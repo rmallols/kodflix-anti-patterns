@@ -31,8 +31,8 @@ export default class Gallery extends React.Component {
         return (
             <div>
                 <div class='shuffle'>
-                    <button onClick={this.shuffle}>Shuffle</button>
-                    <div>{this.state.shuffleTime !== undefined ? 'Shuffle time: ' + this.state.shuffleTime + 'ms' : ''}</div>
+                <button onClick={this.shuffle}>Shuffle</button>
+                <label>{this.state.shuffleTime !== undefined ? 'Shuffle time: ' + this.state.shuffleTime + 'ms' : ''}</label>
                 </div>
                 <div class='gallery'>
                     {
