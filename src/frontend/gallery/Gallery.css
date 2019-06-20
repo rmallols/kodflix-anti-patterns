@@ -17,6 +17,7 @@
     right: 0;
     margin: 10px;
     opacity: .9;
+    font-size: .7rem;
     background-color: black;
     color: white;
     z-index: 1;
@@ -24,7 +25,9 @@
 }
 
 .shuffle button {
-    padding: 15px;
+    padding: 15px 20px;
     cursor: pointer;
     font-size: 1.5rem;
+    background-color: white;
+    border: none;
 }

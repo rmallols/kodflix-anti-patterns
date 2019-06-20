@@ -12,11 +12,10 @@ export default class Gallery extends React.Component {
         this.shuffle = this.shuffle.bind(this);
     }
 
-    shuffle() {
+    async shuffle() {
         let startTime = this.getTime();
-        shuffle(this.state.data).then(data => {
-            this.setState({ data: data });
-        });
+        let data = await shuffle(this.state.data);
+        this.setState({ data: data });
         let endTime = this.getTime();
         this.setState({ shuffleTime: endTime - startTime });
     }
@@ -28,12 +27,12 @@ export default class Gallery extends React.Component {
     render() {
         fetch('/rest/best-movies')
             .then(response => response.json())
-            .then(data => this.setState({ data }));
+            .then(data => this.setState({ data: data }));
         return (
             <div>
                 <div class='shuffle'>
                     <button onClick={this.shuffle}>Shuffle</button>
-                    <div>{this.state.shuffleTime !== undefined ? 'Shuffle time: ' + this.state.shuffleTime : ''}</div>
+                    <div>{this.state.shuffleTime !== undefined ? 'Shuffle time: ' + this.state.shuffleTime + 'ms' : ''}</div>
                 </div>
                 <div class='gallery'>
                     {
